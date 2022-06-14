@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Stylesheet Links-->
+   <link rel="stylesheet" href="style.css">
+
+   <title>How Much Coffee</title>
+</head>
+
+
+<body>
+   <header>
+      <h1>Make the perfect cup of coffee</h1>
+      <p>some text about what to do below.</p>
+   </header>
+   <div class="main-container">
+      
+      <div class="container">
+         <div class="calc-form-wrapper">
+            <form action="" id="coffee-calc-form" onsubmit="cupsFunction(); return false">
+               <!--<input type="number" name="tablespoons" id="tablespoons-input">-->
+               <label for="cups">How many cups of coffee would you like?</label>
+               <br>
+               <input type="number" name="cups" id="cups-input" value="">
+               <button id="submit-btn" >Submit</button>
+            </form>
+         </div>
+
+         <div id="output-wrapper">
+            <ul>
+               <li class="scoops-needed"></li>
+               <li class="water-needed"><span class="icon"><i class="fa-solid fa-glass-water"></i></span></li>
+               <li class="fill-pot"><span class="icon"><i class="fa-solid fa-glass-water-droplet"></i></span></li>
+            </ul>
+            <div id="line-break"></div>
+            <p class="instructions">I was here first</p>            
+         </div>
+      </div>
+   </div>
+   
+
+
+
+
+   <script src="app.js"></script>
+</body>
+</html>
